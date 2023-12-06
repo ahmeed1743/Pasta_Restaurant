@@ -156,5 +156,41 @@
 
 
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+    <script>
+    gsap.fromTo(".landing-text h1, .landing-text p, .landing-text a", {
+    opacity: 0,
+    y: 50
+}, {
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    ease: "power2.out",
+    stagger: 0.2
+});
+
+gsap.from(".logo", {
+    scale: 0,
+    opacity: 0,
+    duration: 1,
+    ease: "power2.out"
+});
+
+const boxes = document.querySelectorAll('.box');
+
+gsap.fromTo(boxes, {
+    opacity: 0,
+    y: 50
+}, {
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    ease: 'power2.out',
+  stagger: 0.5 // Delay each animation by 0.5 seconds
+});
+
+
+    </script>
 </body>
 </html>

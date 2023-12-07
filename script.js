@@ -25,7 +25,7 @@ special_btn.onclick = function(){
 social_btn.onclick = function(){
     branch_heading.innerHTML="Social Events";
     branch_p.innerHTML="Are you looking to have a larger social event? No problem! We’re more than happy to cater for big parties. We’ll work with you to make your event a hit with everyone.";
-    branch_img.src = "iimages/homepage/social-events-desktop.jpg";
+    branch_img.src = "images/homepage/social-events-desktop.jpg";
 }
 
 
